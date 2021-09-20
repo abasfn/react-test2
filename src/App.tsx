@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Menu, { menu } from './page/menu1';
+import Menu, { menu } from './component/menu/menu1';
 import icone1 from '../src/images/Emoticon/icons8-move-24.png';
 import icone2 from '../src/images/Emoticon/icons8-forward-24.png';
 import icone3 from '../src/images/Emoticon/icons8-add-folder-24.png';
