@@ -22,6 +22,7 @@ import icone18 from '../src/images/Emoticon/icons8-ask-question-24.png';
 import icone20 from '../src/images/Emoticon/icons8-hint-24.png';
 import icone21 from '../src/images/Emoticon/icons8-link-24.png';
 import icone23 from '../src/images/Emoticon/icons8-clear-filters-24.png';
+import icone24 from '../src/images/Emoticon/icons8-plus-math-24.png';
 function App() {
   const [show, setshow] = useState<Boolean>(false);
   const [show1, setshow1] = useState<Boolean>(false);
@@ -32,7 +33,7 @@ function App() {
     setshow1(!show1)
   }
   const data: menu[] = [
-    { title: 'Open with', icone1: icone1, icone2: icone2, submenuTitle: [{ title: 'Current more apps' }] },
+    { title: 'Open with', icone1: icone1, icone2: icone2, submenuTitle: [{ title: 'Current more apps',icone:icone24 }] },
     { title: 'New folder', icone1: icone3, line: 'true' },
     { title: 'Share', icone1: icone4 },
     { title: 'Get link', icone1: icone5 },

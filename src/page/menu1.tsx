@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 
 type arey = {
     title: string;
+    icone: string;
 }
 export type menu = {
     title?: string;
@@ -39,7 +40,8 @@ const Menu = (props: MenuType) => {
                             {index === show && <div className='absolute shadow-2xl rounded-md pt-3 pb-3 -right-72 top-0 w-full'>
                                 {item.submenuTitle?.map(item => {
                                     return (
-                                        <div className='pt-1 pb-1 pl-4 pr-4 list'>
+                                        <div className='pt-1 flex gap-2 items-center pb-1 pl-4 pr-4 list'>
+                                            <img className='w-6' src={item.icone} alt="" />
                                             <p className='text-sm text-gray-800'>{item.title}</p>
                                         </div>
                                     )
